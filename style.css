@@ -17,14 +17,52 @@ body {
 .filter {
     width: 170px;
     position: relative;
+    margin-right: 10px;
 }
 
 .inner-filter {
+    display: flex;
+    justify-content: space-between;
+    width: 142px;
     background: #fff;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
     padding: 10px 20px;
     position: relative;
-    cursor: pointer;
+    cursor: pointer;   
+}
+
+.fa-angle-down:before {
+    content: "\f107";
+}
+
+/* This coused th list items to disappear */
+ul.filter-popup { 
+    position: absolute;
+    display: none;
+    right: -30px;
+    top: 100%;
+    z-index: 1;
+    background: #fff;
+    padding: 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #00000029;
+    font-size: 14px;
+    width: 80px;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+
+ul.filter-popup:after {
+    position: absolute;
+    top: -8px;
+    left: 21px;
+    content: "\f0d8";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    color: #fff;
+    font-size: 40px;
+    line-height: 12px;
 }
