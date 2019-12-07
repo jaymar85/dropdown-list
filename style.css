@@ -1,0 +1,30 @@
+body {
+    background: gray;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 710px;
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+    background: rgb(255, 196, 0);
+}
+
+.filter {
+    width: 170px;
+    position: relative;
+}
+
+.inner-filter {
+    background: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 20px;
+    position: relative;
+    cursor: pointer;
+}
