@@ -37,10 +37,9 @@ body {
     content: "\f107";
 }
 
-/* This coused th list items to disappear */
 ul.filter-popup { 
     position: absolute;
-    display: none;
+    display: none; /* This caused th list items to disappear */
     right: -30px;
     top: 100%;
     z-index: 1;
@@ -65,4 +64,22 @@ ul.filter-popup:after {
     color: #fff;
     font-size: 40px;
     line-height: 12px;
+}
+
+ul.filter-popup li {
+    position: relative;
+    z-index: 1;
+}
+
+ul.filter-popup li a {
+    padding: 6px 15px;
+    display: block;
+    line-height: inherit;
+    color: #142138;
+    text-decoration: none;
+}
+
+li {
+    display: list-item;
+    /* text-align: -webkit-match-parent; */
 }
